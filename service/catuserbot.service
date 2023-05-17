@@ -1,0 +1,10 @@
+[Unit]
+Description=Start catuserbot on Network Connect
+After=network-online.target
+
+[Service]
+User=icecube
+ExecStart=/home/$USER/MyPi/script/catuserbot.sh
+
+[Install]
+WantedBy=multi-user.target
