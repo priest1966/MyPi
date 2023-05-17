@@ -1,0 +1,11 @@
+[Unit]
+Description=Start File-Sharing-Bot on Network Connect
+After=network-online.target
+
+[Service]
+User=icecube
+ExecStart=/home/$USER/MyPi/script/filesharebot.sh
+
+[Install]
+WantedBy=multi-user.target
+
