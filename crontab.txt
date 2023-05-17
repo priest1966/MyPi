@@ -1,0 +1,15 @@
+#duckdns
+*/5 * * * * ~/duckdns/duck.sh >/dev/null 2>&1
+
+#code-server
+0 3 * * mon /home/$USER/MyPi/script/codeserver.sh > /home/$USER/MyPi/script/Logs/code-server_update.txt
+
+#whoogle
+0 4 * * mon /home/$USER/MyPi/script/whoogle-update.sh > /home/$USER/MyPi/script/Logs/whoogle-update.txt
+
+#Pihole update
+0 2 * * * ~/home/$USER/MyPi/script/pihole.sh > /home/$USER/MyPi/script/Logs/pihole.txt
+20 2 * * * ~/home/$USER/MyPi/MyPi/script/pihole-update.sh > ~/home/$USERMyPi/script/Logs/pihole-update.txt
+
+#Jellyfin
+25 3 * * * /home/$USER/MyPi/script/jellyfin.sh > /home/$USER/MyPi/script/Logs/jellyfin.txt
